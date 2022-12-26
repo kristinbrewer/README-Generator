@@ -1,11 +1,12 @@
 
-    # Midnight
+    ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+    # midnight
 
     ## Description
     stuff
 
     ## Table of Contents
-    undefined
+    
     - [Description] (#description)
     - [Installation] (#installation)
     - [Usage] (#usage)
@@ -21,16 +22,15 @@
 
     ## License
     MIT
+    MIT INFO
 
     ## Contributing
     me
 
-
     ## Tests
-    this
+    none
 
     ## Questions
-    github.com
-    Please email me at:
-    kr@gmail.com with any additional questions.  
+    For more information, my GitHub account is: github.com .
+    Please email me at: gmail.com with any additional questions.  
   

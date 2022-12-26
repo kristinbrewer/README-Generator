@@ -13,21 +13,36 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 function createREADME(userInfo) {
-    const {
+    let {
+        badge,
         projectTitle,
         description,
         //tableofContents,
         installation,
         usage,
         license,
+        licenseInfo,
         contributing,
         tests,
         username,
         email,
 
     } = userInfo;
+
+    if (license === "MIT"){
+        badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        licenseInfo = "MIT INFO";
+    } else if (license === "ISC") {
+        badge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+        licenseInfo = "ISC INFO";
+    } else {
+        badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+        licenseInfo = "APACHE";
+    }
+
     //return template for README generation 
     return `
+    ## ${badge}
     # ${projectTitle}
 
     ## Description
@@ -50,6 +65,7 @@ function createREADME(userInfo) {
 
     ## License
     ${license}
+    ${licenseInfo}
 
     ## Contributing
     ${contributing}
@@ -121,15 +137,6 @@ function writeFile(md) {
         : console.log('done');
      });
 }
-
-//badges
-//Apache
-//[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-//ISC
-//[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-//MIT
-//[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-
 
 
 // TODO: Create a function to initialize app
