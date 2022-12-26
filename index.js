@@ -16,14 +16,17 @@ function createREADME(userInfo) {
     const {
         projectTitle,
         description,
-        tableofContents,
+        //tableofContents,
         installation,
         usage,
+        license,
         contributing,
         tests,
+        username,
+        email,
 
     } = userInfo;
-    //return template literal for README generation 
+    //return template for README generation 
     return `
     # ${projectTitle}
 
@@ -31,7 +34,13 @@ function createREADME(userInfo) {
     ${description}
 
     ## Table of Contents
-    ${tableofContents}
+    
+    - [Description] (#description)
+    - [Installation] (#installation)
+    - [Usage] (#usage)
+    - [License] (#license)
+    - [Contributing] (#contributing)
+    - [Tests] (#tests)
 
     ## Installation
     ${installation}
@@ -39,11 +48,18 @@ function createREADME(userInfo) {
     ## Usage
     ${usage}
 
+    ## License
+    ${license}
+
     ## Contributing
     ${contributing}
 
     ## Tests
     ${tests}
+
+    ## Questions
+    For more information, my GitHub account is: ${username} .
+    Please email me at: ${email} with any additional questions.  
   `
 }
 
@@ -57,27 +73,43 @@ function askQuestions () {
         {
             name: 'description',
             message: 'Please give a brief description of the project:',
-            type: 'editor',
+            type: 'input',
         },
         {
             name: 'installation',
             message: 'What are the installation instructions?',
-            type: 'editor',
+            type: 'input',
         },
         {
             name: 'usage',
             message: 'What is the usage?',
-            type: 'editor',
+            type: 'input',
+        },
+        {
+            name: 'license',
+            message: 'What license would you like to use?',
+            type: 'list',
+            choices: ["MIT", "ISC", "Apache License 2.0"],
         },
         {
             name: 'contributing',
             message: 'Who is contributing?',
-            type: 'editor',
+            type: 'input',
         },
         {
             name: 'tests',
             message: 'What tests did you use?',
-            type: 'editor',
+            type: 'input',
+        },
+        {
+            name: 'username',
+            message: 'Please enter your GitHub account:',
+            type: 'input',
+        },
+        {
+            name: 'email',
+            message: 'Please enter your email address:',
+            type: 'input',
         },
     ]);
 }
@@ -89,6 +121,16 @@ function writeFile(md) {
         : console.log('done');
      });
 }
+
+//badges
+//Apache
+//[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+//ISC
+//[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+//MIT
+//[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+
 
 // TODO: Create a function to initialize app
 function init() {
