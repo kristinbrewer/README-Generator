@@ -64,7 +64,7 @@ ${contributing}
 ${tests}
 
 ## Questions
-For more information, my GitHub account is: [${username}](https://github.com/${username}) .
+For more information, my GitHub account is: [${username}](https://github.com/${username}).
 Please email me at: ${email} with any additional questions. `;
 }
 //questions in prompt 

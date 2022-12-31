@@ -1,9 +1,16 @@
-# README
+# README Generator
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-generates readmes
+This command-line application allows users to dynamically generate README documents given use of Node.js. When users use the command of ```node index.js``` the application will begin. Users will be prompted to input a title of their application, description, installation information, usage, contributor and tests used. They will be given the option of available licenses; when license is chosen, chosen license badge and information will generate to the README. They will also be prompted for their gitHub account and email to be displayed on the README Question section. When the user name is clicked on in the README, it will open a browser page to the profile. A Table of Contents will be available that will take user to cooresponding portions of page when clicked. 
+
+
+![Mockup of README Generator.](./imgs/READMEGEN.png)
+
+[Video run through of application](https://drive.google.com/file/d/1fQxWhNPbs-HCghFDbvgFo8LCFOGqgfn2/view?usp=sharing)
+
+[GitHub Repo](https://github.com/kristinbrewer/README-Generator)
 
 ## Table of Contents
 - [Description](#description)
@@ -15,21 +22,21 @@ generates readmes
 - [Questions](#questions)
 
 ## Installation
-N/a
+Node.js and the inquirer package
 
 ## Usage
-none
+Initiate index.js via integrated terminal, enter in responses to question prompts, view created README.
 
 ## License
-Apache License 2.0 Copyright (c) 2022 kristinbrewer
-Licensed under the Apache License, Version 2.0 (the ”License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an ”AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+MIT Copyright (c) 2022 kristinbrewer
+Permission is hearby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED ”AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 
 ## Contributing
-none
+Kristin Brewer
 
 ## Tests
-this
+N/a
 
 ## Questions
-For more information, my GitHub account is: [kristinbrewer](https://kristinbrewer) .
-Please email me at: kr527106@gmail.com with any additional questions. 
+For more information, my GitHub account is: [kristinbrewer](https://github.com/kristinbrewer).
+Please email me at: brewer.kristin17@gmail.com with any additional questions. 
