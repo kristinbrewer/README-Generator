@@ -1,36 +1,35 @@
+# README GENERATOR
 
-    ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-    # midnight
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-    ## Description
-    stuff
+## Description
+generates read mes
 
-    ## Table of Contents
-    
-    - [Description] (#description)
-    - [Installation] (#installation)
-    - [Usage] (#usage)
-    - [License] (#license)
-    - [Contributing] (#contributing)
-    - [Tests] (#tests)
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-    ## Installation
-    things
+## Installation
+none
 
-    ## Usage
-    use
+## Usage
+none
 
-    ## License
-    MIT
-    MIT INFO
+## License
+ISC
+This application is covered by the ISC license
 
-    ## Contributing
-    me
+## Contributing
+me
 
-    ## Tests
-    none
+## Tests
+none
 
-    ## Questions
-    For more information, my GitHub account is: github.com .
-    Please email me at: gmail.com with any additional questions.  
-  
+## Questions
+For more information, my GitHub account is: [github.com/kristinbrewer](https://github.com/kristinbrewer) .
+Please email me at: kr527106@gmail.com with any additional questions. 

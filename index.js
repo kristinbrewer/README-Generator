@@ -17,7 +17,6 @@ function createREADME(userInfo) {
         badge,
         projectTitle,
         description,
-        //tableofContents,
         installation,
         usage,
         license,
@@ -31,52 +30,51 @@ function createREADME(userInfo) {
 
     if (license === "MIT"){
         badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-        licenseInfo = "MIT INFO";
+        licenseInfo = "This application is covered by the MIT license";
     } else if (license === "ISC") {
         badge = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
-        licenseInfo = "ISC INFO";
+        licenseInfo = "This application is covered by the ISC license";
     } else {
         badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-        licenseInfo = "APACHE";
+        licenseInfo = "This application is covered by the Apache 2.0 license";
     }
 
     //return template for README generation 
-    return `
-    ## ${badge}
-    # ${projectTitle}
+    return `# ${projectTitle}
 
-    ## Description
-    ${description}
+${badge}
 
-    ## Table of Contents
-    
-    - [Description] (#description)
-    - [Installation] (#installation)
-    - [Usage] (#usage)
-    - [License] (#license)
-    - [Contributing] (#contributing)
-    - [Tests] (#tests)
+## Description
+${description}
 
-    ## Installation
-    ${installation}
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-    ## Usage
-    ${usage}
+## Installation
+${installation}
 
-    ## License
-    ${license}
-    ${licenseInfo}
+## Usage
+${usage}
 
-    ## Contributing
-    ${contributing}
+## License
+${license}
+${licenseInfo}
 
-    ## Tests
-    ${tests}
+## Contributing
+${contributing}
 
-    ## Questions
-    For more information, my GitHub account is: ${username} .
-    Please email me at: ${email} with any additional questions.  
-  `
+## Tests
+${tests}
+
+## Questions
+For more information, my GitHub account is: [${username}](https://${username}) .
+Please email me at: ${email} with any additional questions. `;
 }
 
 function askQuestions () {
