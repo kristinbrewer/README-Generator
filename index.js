@@ -78,7 +78,7 @@ function askQuestions () {
         {
             name: 'description',
             message: 'Please give a brief description of the project:',
-            type: 'input',
+            type: 'editor',
         },
         {
             name: 'installation',
