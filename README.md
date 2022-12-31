@@ -5,12 +5,13 @@
 ## Description
 This command-line application allows users to dynamically generate README documents given use of Node.js. When users use the command of ```node index.js``` the application will begin. Users will be prompted to input a title of their application, description, installation information, usage, contributor and tests used. They will be given the option of available licenses; when license is chosen, chosen license badge and information will generate to the README. They will also be prompted for their gitHub account and email to be displayed on the README Question section. When the user name is clicked on in the README, it will open a browser page to the profile. A Table of Contents will be available that will take user to cooresponding portions of page when clicked. 
 
-
 ![Mockup of README Generator.](./imgs/READMEGEN.png)
 
 [Video run through of application](https://drive.google.com/file/d/1fQxWhNPbs-HCghFDbvgFo8LCFOGqgfn2/view?usp=sharing)
 
 [GitHub Repo](https://github.com/kristinbrewer/README-Generator)
+
+
 
 ## Table of Contents
 - [Description](#description)
